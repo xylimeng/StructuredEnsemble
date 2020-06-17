@@ -1,15 +1,5 @@
-# Double-spike Dirichlet priors
-Bayesian procedure using double-spike Dirichlet priors
+# Demonstration 
 
-
-
-## Examples using Concrete dataset from the UCI repository  
-
-The followling demonstration is also in the "example.R" script. The returned variables are saved in "demo.RData" for quick access. 
-
-### Improve random forests predictions using Bayesian procedure with double-spike Dirichlet priors
-
-```R
 rm(list = ls())
 source("sourceCode.R")
 
@@ -48,12 +38,7 @@ gp.results=gprior.full.decouple(x=rf.indiv[train_id,],y=Concrete_Data$ccs[train_
 gp_beta_mean=colMeans(gp.results$betas[burning:iteration,])
 # predictions of the Bayesian procedure using double-spike Dirichlet priors
 gp.pred.tp=rf.indiv%*%gp_beta_mean
-```
 
-
-#### In and out-of sample predictions  
-
-```R
 # Compare root MSE
 # out-of-sample rmse
 rmse.out.rf=sqrt(mean((rf.agg[test_id]-Concrete_Data$ccs[test_id])^2))
@@ -64,14 +49,4 @@ rmse.in.gp=sqrt(mean((gp.pred.tp[train_id,]-Concrete_Data$ccs[train_id])^2))
 
 c(rmse.out.proposed=rmse.out.gp, rmse.out.randomforest=rmse.out.rf, rmse.in.proposed=rmse.in.gp, rmse.in.randomforest=rmse.in.rf)
 
-# output: 
-#   rmse.out.proposed rmse.out.randomforest      rmse.in.proposed  rmse.in.randomforest
-#            5.875607              6.522016              2.736968              3.414659 
-```
-
-
-
-## Reference: 
-
-Lin, H. and Li, M. (2020). [Double spike Dirichlet priors for structured weighting](https://arxiv.org/abs/1611.01241v3). Revision submitted. arXiv:1611.01241v3
-
+save.image(file = "demo.RData")
