@@ -5,7 +5,7 @@ Bayesian procedure using double-spike Dirichlet priors
 
 ## Examples using Concrete dataset from the UCI repository  
 
-The followling demonstration is also in the "example.R" script. The returned variables are saved in "demo.RData" for quick access. 
+The followling demonstration is also in the "example.R" script.
 
 ### Improve random forests predictions using Bayesian procedure with double-spike Dirichlet priors
 
