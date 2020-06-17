@@ -1,5 +1,5 @@
 # Double-spike Dirichlet priors
-Bayesian procedure using double-spike Dirichlet priors for structured forecast combination. 
+Bayesian procedure using double-spike Dirichlet priors for inferring structured probabiliy simplexes. 
 
 
 
