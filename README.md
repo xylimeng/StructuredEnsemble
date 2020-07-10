@@ -73,5 +73,5 @@ c(rmse.out.proposed=rmse.out.gp, rmse.out.randomforest=rmse.out.rf, rmse.in.prop
 
 ## Reference: 
 
-Lin, H. and Li, M. (2020). Double spike Dirichlet priors for structured weighting. 
+Lin, H. and Li, M. (2020). Double spike Dirichlet priors for structured weighting. Under review. arXiv:2007.04387v1
 
