@@ -1,4 +1,4 @@
-# Double-spike Dirichlet priors
+# Double spike Dirichlet priors
 Bayesian procedure using double-spike Dirichlet priors for inferring structured probabiliy simplexes. 
 
 
@@ -7,7 +7,7 @@ Bayesian procedure using double-spike Dirichlet priors for inferring structured 
 
 The followling demonstration is also in the "example.R" script.
 
-### Improve random forests predictions using Bayesian procedure with double-spike Dirichlet priors
+### Improve random forests predictions using Bayesian procedure with double spike Dirichlet priors
 
 ```R
 rm(list = ls())
